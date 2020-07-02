@@ -59,6 +59,11 @@ header .container {
     z-index: 1;
 }
 
+header .nav {
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 1;
+}
+
 .banner {
     color: white;
     text-align: center;
@@ -86,6 +91,8 @@ h1 {
     color: red;
     border-radius: 40px;
     margin-top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .banner button:first-child {
@@ -112,4 +119,177 @@ h1 {
     position: relative;
     bottom: -207px;
     right: -47%;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.blog h2::after {
+    content: "";
+    contain: "";
+    background-color: red;
+    display: block;
+    height: 4px;
+    width: 50px;
+    position: relative;
+    bottom: 20px;
+    right: -750px;
+}
+
+.blog h2::before {
+    content: "";
+    contain: "";
+    background-color: red;
+    display: block;
+    height: 3px;
+    width: 50px;
+    position: relative;
+    bottom: -20px;
+    right: -570px;
+}
+
+.blog .box {
+    width: 352px;
+    margin: 10px;
+}
+
+.blog .box img {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 234px;
+    margin-bottom: 25px;
+}
+
+.blog h2 {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+    height: 150px;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 91px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.blog .box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.blog h3 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.blog input {
+    margin-top: 26px;
+    padding: 10px 29px;
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+    width: 152px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    margin-bottom: 110px;
+}
+
+.service {
+    background-color: #28272C;
+    height: 643px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.service h2::after {
+    content: "";
+    contain: "";
+    background-color: red;
+    display: block;
+    height: 4px;
+    width: 50px;
+    position: relative;
+    bottom: 20px;
+    right: -770px;
+}
+
+.service h2::before {
+    content: "";
+    contain: "";
+    background-color: red;
+    display: block;
+    height: 3px;
+    width: 50px;
+    position: relative;
+    bottom: -20px;
+    right: -540px;
+}
+
+.service .box {
+    width: 231px;
+    margin: 10px;
+    color: white;
+}
+
+.service .box img {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.service h2 {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+    height: 150px;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 61px;
+    font-weight: bold;
+    color: white;
+}
+
+.service .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.service h3 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.service input {
+    margin-top: 26px;
+    padding: 10px 29px;
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+    width: 152px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    margin-bottom: 70px;
 }
