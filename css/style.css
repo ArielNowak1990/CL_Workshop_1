@@ -123,7 +123,7 @@ h1 {
 
 .blog {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -211,7 +211,7 @@ h1 {
 
 .service {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -348,7 +348,6 @@ section.contact h2 {
 .contact__banner {
     display: block;
     width: 350px;
-    height: 315px;
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -358,7 +357,8 @@ section.contact h2 {
     background-repeat: no-repeat;
     background-position: center;
     align-self: stretch;
-    margin-top: 20px;
+    margin-top: -60px;
+    margin-right: 25px;
 }
 
 .form {
@@ -406,7 +406,8 @@ section.contact h2 {
 }
 
 .form input:checked+p::before {
-    border: 5px solid green;
+    background-color: green;
+    border: 2px solid green;
 }
 
 .form textarea {
@@ -498,4 +499,8 @@ footer li:first-of-type {
     display: flex;
     padding-bottom: 40px;
     margin-right: 20px;
+}
+
+input[type=button] {
+    cursor: pointer;
 }
