@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background-image: url(../images/Image.jpg);
+    height: 807px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nav {
+    height: 90;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.685);
+    z-index: 2;
+}
+
+.nav a {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.685);
+    padding-bottom: 33px;
+    padding-top: 35px;
+}
+
+.nav a span {
+    color: red;
+}
+
+.nav ul {
+    display: flex;
+    margin: 33px 0;
+}
+
+.nav ul a {
+    padding: 20px;
+    font-size: 16px;
+}
+
+header .container {
+    background-color: rgba(0, 0, 0, 0.418);
+    z-index: 1;
+}
+
+.banner {
+    color: white;
+    text-align: center;
+    width: 917px;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+.banner p {
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: 123px;
+    margin-bottom: 33px;
+}
+
+.banner button {
+    padding: 23px 51px;
+    border: 2px solid white;
+    background-color: white;
+    color: red;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+.banner button:first-child {
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    margin-right: 25px;
+}
+
+.arrow img::after {
+    content: "";
+    contain: "";
+}
+
+.arrow {
+    background-color: red;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border-radius: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -207px;
+    right: -47%;
+}
