@@ -297,9 +297,7 @@ h1 {
 
 .contact {
     display: block;
-    border: 2px solid red;
-    width: 904px;
-    height: 489px;
+    width: 1004px;
     margin: 0 auto;
     margin-bottom: 70px;
 }
@@ -314,6 +312,7 @@ section.contact h2 {
     padding-top: 61px;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
 }
 
 .contact h2::after {
@@ -325,7 +324,7 @@ section.contact h2 {
     width: 50px;
     position: relative;
     bottom: 20px;
-    right: -530px;
+    right: -590px;
 }
 
 .contact h2::before {
@@ -337,7 +336,7 @@ section.contact h2 {
     width: 50px;
     position: relative;
     bottom: -20px;
-    right: -320px;
+    right: -355px;
 }
 
 .contact__form {
@@ -358,6 +357,8 @@ section.contact h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: stretch;
+    margin-top: 20px;
 }
 
 .form {
@@ -367,13 +368,77 @@ section.contact h2 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
+    color: #B2B2B2;
 }
 
 
 /* TODO :: */
 
+.form input {
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #B2B2B2;
+    color: #B2B2B2;
+}
+
+.form_agree p {
+    font-size: 10px;
+    width: 90%;
+    padding-left: 35px;
+    margin-bottom: 70px;
+}
+
+.form_agree {
+    display: flex;
+    position: relative;
+}
+
+.form p::before {
+    content: " ";
+    display: block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid red;
+    position: absolute;
+    left: 0px;
+}
+
+.form input:checked+p::before {
+    border: 5px solid green;
+}
+
+.form textarea {
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #B2B2B2;
+    color: #B2B2B2;
+}
+
+.form input:last-child {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    padding: 11px 42px;
+    max-width: 142px;
+    border-radius: 45px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-weight: bold;
+}
+
+#offline {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+
 footer {
-    height: 232px;
+    height: 272px;
     background-color: #28272C;
 }
 
@@ -395,8 +460,7 @@ footer a {
 .footer_logo {
     width: 100%;
     flex-grow: 1;
-    margin-top: 40px;
-    margin-left: 140px;
+    margin-left: 150px;
     font-size: 25px;
 }
 
@@ -406,6 +470,7 @@ footer a {
 
 .footer_nav {
     margin-left: 140px;
+    margin-bottom: 20px;
 }
 
 .footer_nav ul {
@@ -431,5 +496,6 @@ footer li:first-of-type {
     font-size: 12px;
     font-weight: 300;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    margin-right: 20px;
 }
