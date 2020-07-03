@@ -418,7 +418,11 @@ section.contact h2 {
 }
 
 .form input:checked+p::before {
-    background-color: green;
+    background-image: url(../images/Icon\ Check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 128, 0, 0.342);
     border: 2px solid green;
 }
 
