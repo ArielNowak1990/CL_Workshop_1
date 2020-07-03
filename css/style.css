@@ -383,6 +383,18 @@ section.contact h2 {
     color: #B2B2B2;
 }
 
+.form input:focus {
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid red;
+    color: #B2B2B2;
+}
+
+.form input::placeholder {
+    color: #B2B2B2;
+}
+
 .form_agree p {
     font-size: 10px;
     width: 90%;
